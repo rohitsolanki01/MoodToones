@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size: clamp(24px, 5vw, 30px);
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+}
+
+.item button{
+    padding: 0.5rem 1rem;
+    font-size: clamp(16px, 4vw, 20px);
+    font-family: Arial,sans-serif;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.item a:hover {
+    opacity: 1;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.main-container{
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 800px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-container h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(28px, 5vw, 45px);
+    color: #333;
+    padding: 0 1rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 0 1rem;
+}
+
+.card{
+    background: linear-gradient(to right, #cbe5ff, #a6d3ff);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: clamp(24px, 5vw, 40px);
+    font-family: Lato;
+    text-align: center;
+}
+
+.sub-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: clamp(10px, 2vw, 12px);
+    font-family: Lato;
+    text-align: center;
+}
+
+#second-card{
+    background-image: linear-gradient(to right,#fbbf24,#f59e0b);
+}
+
+#third-card{
+    background-image: linear-gradient(to right,#f472b6, #db2777);
+}
+
+#four-card{
+    background-image: linear-gradient(to right,#f97316,#ea580c)
+}
+
+#fifth-card{
+    background-image: linear-gradient(to right, #0f766e, #134e4a);
+}
+
+#six-card{
+    background-image: linear-gradient(to right, #7c3aed, #5b21b6)
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.btn button{
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-left: 0;
+    }
+    
+    .main-container {
+        min-height: auto;
+        padding-bottom: 2rem;
+    }
+    
+    .card {
+        max-width: calc(50% - 20px);
+        min-height: 180px;
+    }
+    
+    .main-container h1 {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    
+    .card-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+        min-height: 150px;
+    }
+    
+    .heading {
+        font-size: 28px;
+    }
+    
+    .btn button {
+        padding: 12px 24px;
+    }
+}
