@@ -1,17 +1,4 @@
 
-// const focusCard = document.getElementById('six-card');
-
-// // Add click event listener
-// focusCard.addEventListener('click', function() {
-//     window.open('focus-playlist.html', '_blank');
-// });
-
-// const calmCard = document.getElementById("first");
-
-// calmCard.addEventListener("click", () => {
-//     window.open("./plalist-section/calm-playlist.html", "_blank");
-// });
-
 const cards = {
     'first': './plalist-section/calm-playlist.html',
     'second-card': './plalist-section/joyful-playlist.html',
