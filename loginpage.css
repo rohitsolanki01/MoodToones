@@ -198,7 +198,17 @@
   .item a:hover {
     opacity: 0.8;
   }
-  
+  .home{
+    position: absolute;
+    top: 0;
+   left: 0;
+   margin: 30px px 0px 80px;
+   font-size: 25px;
+  }
+  .home a i{
+    text-decoration: none;
+    color: black;
+  }
   @media (max-width: 768px) {
     .main-conteriner {
       margin-top: 20vh;

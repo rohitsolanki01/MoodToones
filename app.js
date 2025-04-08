@@ -1,4 +1,3 @@
-
 const cards = {
     'first': './plalist-section/calm-playlist.html',
     'second-card': './plalist-section/joyful-playlist.html',
