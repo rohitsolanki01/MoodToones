@@ -1,3 +1,4 @@
+
 const cards = {
     'first': './plalist-section/calm-playlist.html',
     'second-card': './plalist-section/joyful-playlist.html',
@@ -13,3 +14,4 @@ document.querySelectorAll('.card').forEach(card => {
         if (link) window.open(link, '_blank');
     });
 });
+
